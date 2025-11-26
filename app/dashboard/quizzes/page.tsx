@@ -57,7 +57,7 @@ export default function QuizzesPage() {
     if (quiz.reviewable) {
       router.push(`/dashboard/quizzes/${quiz.quizId}/review`);
     } else {
-      router.push(`/dashboard/quizzes/${quiz.quizId}/start`);
+      router.push(`/dashboard/quizzes/${quiz.quizId}`);
     }
   };
 
