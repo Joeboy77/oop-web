@@ -108,14 +108,6 @@ export default function DashboardPage() {
             <CardTitle className="text-white">Recent Activity</CardTitle>
             <CardDescription className="text-slate-400">Your latest learning activities</CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm text-slate-300">
-                <Clock className="h-4 w-4 text-slate-500" />
-                <span>No recent activity</span>
-              </div>
-            </div>
-          </CardContent>
         </Card>
       </div>
     </div>

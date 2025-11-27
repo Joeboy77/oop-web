@@ -78,12 +78,12 @@ export default function QuizzesPage() {
             <Card key={quiz.attemptId} className="border-slate-800 bg-slate-900/80 backdrop-blur-xl">
               <CardHeader>
                 <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <CardTitle className="text-white">{quiz.title}</CardTitle>
+                  <div className="flex-1 min-w-0">
+                    <CardTitle className="text-white text-md md:text-lg truncate">{quiz.title}</CardTitle>
                     <CardDescription className="text-slate-400 mt-1">{quiz.description}</CardDescription>
                   </div>
                   {quiz.passed && (
-                    <CheckCircle2 className="h-6 w-6 text-green-500" />
+                    <CheckCircle2 className="h-4 w-6 text-green-500" />
                   )}
                 </div>
               </CardHeader>
@@ -98,7 +98,7 @@ export default function QuizzesPage() {
                   </div>
                 </div>
                 {quiz.scorePercent !== null && quiz.scorePercent !== undefined && (
-                  <div className="p-3 rounded-lg bg-green-500/10 border border-green-500/20">
+                  <div className="p-2 rounded-lg bg-green-500/10 border border-green-500/20">
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-slate-300">Your Score</span>
                       <span className="text-lg font-bold text-green-500">{quiz.scorePercent}%</span>

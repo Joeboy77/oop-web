@@ -82,9 +82,9 @@ export default function VideoPlayerPage() {
 
     if (!video) {
         return (
-            <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+            <div className="flex flex-col items-center justify-center min-h-screen gap-4 ">
                 <div className="text-white text-xl">Video not found</div>
-                <Button onClick={() => router.push('/dashboard/videos')}>
+                <Button className='hover:text-slate-900' onClick={() => router.push('/dashboard/videos')}>
                     <ArrowLeft className="h-4 w-4 mr-2" />
                     Back to Videos
                 </Button>
@@ -98,7 +98,7 @@ export default function VideoPlayerPage() {
                 <Button
                     variant="ghost"
                     onClick={() => router.push('/dashboard/videos')}
-                    className="text-slate-400 hover:text-white"
+                    className="text-slate-400 hover:text-slate-900 "
                 >
                     <ArrowLeft className="h-4 w-4 mr-2" />
                     Back to Videos
@@ -175,7 +175,7 @@ export default function VideoPlayerPage() {
                             <Button
                                 variant="outline"
                                 onClick={() => window.open(video.youtubeUrl, '_blank')}
-                                className="w-full border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
+                                className="w-full border-slate-700 text-slate-900 hover:text-white hover:bg-slate-800"
                             >
                                 Watch on YouTube
                             </Button>
@@ -183,7 +183,7 @@ export default function VideoPlayerPage() {
                             <Button
                                 variant="outline"
                                 onClick={() => router.push('/dashboard/videos')}
-                                className="w-full border-slate-700 text-slate-300 hover:text-white hover:bg-slate-800"
+                                className="w-full border-slate-700 text-slate-900 hover:text-white hover:bg-slate-800"
                             >
                                 <ArrowLeft className="h-4 w-4 mr-2" />
                                 All Videos
