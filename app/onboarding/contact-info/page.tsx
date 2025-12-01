@@ -91,7 +91,7 @@ export default function ContactInfoPage() {
                   type="tel"
                   {...register('phoneNumber')}
                   className="bg-slate-800/50 border-slate-700 text-white h-12 text-base placeholder:text-slate-500 focus:border-primary focus:ring-primary transition-all"
-                  placeholder="+233 12 345 6789 or 024 456 6789"
+                  placeholder="024 456 6789"
                 />
                 {errors.phoneNumber && (
                   <p className="text-sm text-destructive flex items-center gap-1 mt-1">
